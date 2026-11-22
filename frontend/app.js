@@ -73,14 +73,15 @@ function applyLanguage() {
   const t = getUi(currentLanguage);
   document.documentElement.lang = currentLanguage === 'kk' ? 'kk' : 'ru';
   document.title = currentLanguage === 'kk'
-    ? 'Жақын — ыңғайлы оқу қарқыны'
-    : 'Рядом — учёба в удобном темпе';
+    ? 'EduAI — ыңғайлы оқу қарқыны'
+    : 'EduAI — учёба в удобном темпе';
   document.querySelector('meta[name="description"]').setAttribute('content',
     currentLanguage === 'kk'
       ? 'Қолжетімді оқу платформасы: өзіңізге ыңғайлы қарқынмен оқыңыз.'
       : 'Доступная образовательная платформа: учитесь в удобном темпе и выбирайте подходящий формат.');
   document.querySelector('.skip').textContent = t.skip;
   document.querySelector('.brand').setAttribute('aria-label', t.brandAria);
+  document.querySelector('.brand > span:last-child').textContent = 'EduAI';
   document.querySelector('.nav-label').textContent = t.learning;
   const navLabels = ['dashboard', 'courses', 'progress', 'achievements'];
   document.querySelectorAll('.nav-link span').forEach((span, index) => {

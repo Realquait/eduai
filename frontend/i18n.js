@@ -1,7 +1,7 @@
 export const ui = {
   ru: {
     skip: 'Перейти к содержимому',
-    brandAria: 'Рядом — на главную',
+    brandAria: 'EduAI — на главную',
     learning: 'Обучение',
     dashboard: 'Мой кабинет',
     courses: 'Каталог курсов',
@@ -109,7 +109,7 @@ export const ui = {
   },
   kk: {
     skip: 'Мазмұнға өту',
-    brandAria: '«Жақын» басты бетіне',
+    brandAria: 'EduAI басты бетіне',
     learning: 'Оқу',
     dashboard: 'Менің кабинетім',
     courses: 'Курстар каталогы',
