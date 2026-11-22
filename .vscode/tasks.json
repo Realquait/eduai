@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "EduAI: Start Live Server",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "-e",
+        "const liveServer=require(process.env.USERPROFILE+'/.vscode/extensions/ritwickdey.liveserver-5.7.10/node_modules/live-server');liveServer.start({host:'0.0.0.0',port:5500,root:'frontend',proxy:[['/api','http://127.0.0.1:5000/api']],watch:['frontend']});"
+      ],
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
